@@ -434,7 +434,14 @@ h6:first-child
 	background-color: #fff
 }
 
-
+/* Text Hover 
+------------------*/
+.textHover > p {
+	color: rgba(0, 0, 0, 0.452);
+}
+.textHover:hover > p{
+	color :rgba(0, 0, 0, 1)
+}
 
 /* blockquote
 ------------------*/
@@ -2090,9 +2097,7 @@ body.dark-theme{
 .dark-theme #header{
 	background-color: #0A0A0A;
 }
-.dark-theme #header.has-border{
-	border-bottom: 1px solid #191919;
-}
+
 .dark-theme .main-menu a{
 	color: #fff;
 }
