@@ -52,6 +52,9 @@ body {
 	color: #222;
 	position: relative;
 	background: #fff;
+	background-image: linear-gradient(to right,rgba(180, 118, 55, 0.829),rgba(180, 118, 55, 0.829) ) ,url(../Geneimg/Gene.jpeg);
+	background-position:top;
+
 	/*-ms-overflow-style: scrollbar;*/
 }
 body {-ms-overflow-style: scrollbar;}
@@ -95,6 +98,32 @@ img {
 	height: auto;
 	display: inline-block;
 	border: none;
+
+}
+
+.head > a > img{
+	animation-name: dropDo;
+	animation-duration: 3s;
+}
+
+@keyframes dropDo {
+
+	0% {
+		opacity: 0;
+		transform: translate(0);
+	}
+40%{
+	opacity : 1;
+	transform: translateY(70px);
+}
+
+	
+	
+	100%{
+		opacity:1;
+		transform: translate(-200px,70px);
+	
+	}
 }
 
 ::-webkit-input-placeholder {color: inherit}
@@ -113,7 +142,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 { font-size: 50px; line-height: 64px; }
 h2 { font-size: 40px; line-height: 50px; }
 h3 { font-size: 28px; line-height: 36px; }
-h4 { font-size: 21px; line-height: 27px; }
+h4 { font-size: 18px; line-height: 27px; }
 h5 { font-size: 17px; line-height: 22px; }
 h6 { font-size: 14px; line-height: 18px; }
 
@@ -516,9 +545,11 @@ blockquote footer{
 	font-weight: bold;
 	letter-spacing: 1px;
 	text-decoration: none;
-	-webkit-transition: background .2s, color .2s, border-color .2s, border-radius .5s;
-			transition: background .2s, color .2s, border-color .2s ,border-radius .5s;
+	-webkit-transition: background .35s, color .35s, border-color .35s;
+			transition: background .35s, color .35s, border-color .35s ;
 }
+
+
 .ButtonH:hover {
 	text-decoration: none;
 	background: #333;
@@ -702,7 +733,7 @@ blockquote footer{
 	margin-bottom: 0;
 }
 
-.row > div > img{
+.row > div > a > img{
 	border-radius: 10%;
 	 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
 	  0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -778,7 +809,16 @@ blockquote footer{
 }
 #header
 {
+	
 	background-color: rgba(0,0,0,0.5);
+	background-color: rgba(104, 55, 3, 0.897) ; height: 220px; clip-path: polygon(0 0, 100% 0 , 100% 40%, 0 60%);
+}
+.head
+{
+	float:left; 
+	width:30%;
+	padding-left: 80px;
+	padding-bottom:20px;
 }
 
 /* LOGO */
@@ -958,6 +998,7 @@ blockquote footer{
 		margin-top: 17px;
 		margin-bottom: 17px;
 	}
+	
 	#header nav{
 		text-align: left;
 		padding-left: 20px;
